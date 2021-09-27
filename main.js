@@ -34,8 +34,7 @@ window.onload = function(){
 			//img
 			let imgNode = document.createElement('IMG');
 			imgNode.src = imgUrl;
-			let div = document.createElement('div');
-			document.getElementById('container').appendChild(imgNode);
+			document.getElementById('imgContainer').appendChild(imgNode);
 			//img info
 			let titleNode = document.createElement('h2');
 			titleNode.innerText = 'Image Info';
@@ -46,11 +45,11 @@ window.onload = function(){
 			let dateNode = document.createElement('p');
 			dateNode.innerText = 'Date: '+date;
 			
-			let div2 = document.createElement('div');
-			div2.appendChild(titleNode);
-			div2.appendChild(descNode);
-			div2.appendChild(authorNode);
-			div2.appendChild(dateNode);
-			document.getElementById('right').appendChild(div2);
+			let div = document.createElement('div');
+			div.appendChild(titleNode);
+			div.appendChild(descNode);
+			div.appendChild(authorNode);
+			div.appendChild(dateNode);
+			document.getElementById('right').appendChild(div);
 		});
 }
